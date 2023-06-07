@@ -12,20 +12,24 @@ tur.shape('turtle')
 tur.color("green")
 tur.penup()
 
-tur.write("asdasd")
-
-
-
-
-def showHideTurtle():
-    tur.hideturtle()
-    tur.goto(randint(-250, 250), randint(-200, 200)) # deqiqleshdirilmeli
-    tur.showturtle()
-
-
+# turtle random gelmesi
 for i in range(10):
-    showHideTurtle()
+    tur.hideturtle()
+    tur.goto(randint(-250, 250), randint(-200, 200))  # deqiqleshdirilmeli
+    time.sleep(0.5)
+    tur.showturtle()
     time.sleep(1)
+
+
+
+
+# timer_text.clear()
+# timer_text.write(i, font=("Courier", 30))
+
+
+
+timer_text = turtle.Turtle('circle', visible=False)
+timer_text.penup()
 
 
 
