@@ -1,6 +1,6 @@
 import turtle
 from random import randint
-from threading import Timer
+import time
 
 drawing_board =turtle.Screen()
 drawing_board.bgcolor("light blue")
@@ -12,13 +12,21 @@ tur.shape('turtle')
 tur.color("green")
 tur.penup()
 
+tur.write("asdasd")
+
+
+
 
 def showHideTurtle():
     tur.hideturtle()
-    tur.goto(randint(-250, 0), randint(0, 200))
+    tur.goto(randint(-250, 250), randint(-200, 200)) # deqiqleshdirilmeli
     tur.showturtle()
 
 
-Timer(1, showHideTurtle).start()
+for i in range(10):
+    showHideTurtle()
+    time.sleep(1)
+
+
 
 turtle.done()
